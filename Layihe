@@ -51,6 +51,185 @@ a:link {
     font-size: 18px;
 }
 
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Milli Qəhrəmanlar</title>
+</head>
+<body>
+    <footer class="container">
+        <div class="innerbox">
+            <div class="innerboxbir">
+                <div class="loqo">
+                    <span class="loqobir">MQ</span>
+                    <div>
+                        <h3>Milli Qəhrəmanlar</h3>
+                        <p >Xatirə Portalı</p>
+                    </div>
+                </div>
+                <p class="metn">Azərbaycan Respublikasının ərazi bütövlüyü və suverenliyi uğrunda şəhid olmuş qəhrəmanlarımızın xatirəsini əbədiləşdirən rəsmi portal.</p>
+            </div>
+            <div class="innerboxiki">
+                <h3>Sürətli Keçidlər</h3>
+                <ul>
+                    <li><a href="#">Ana Səhifə</a></li>
+                    <li><a href="#">Qəhrəmanlar Arxivi</a></li>
+                    <li><a href="#">Media Qalereya</a></li>
+                    <li><a href="#">Haqqımızda</a></li>
+                </ul>
+            </div>
+            <div class="innerboxuc">
+                <h3>Əlaqə</h3>
+                <ul class="melumat">
+                    <li>Bakı şəhəri, Azərbaycan Respublikası</li>
+                    <li>+994 12 123 45 67</li>
+                    <li> info@milliqahramanlar.az</li>
+                </ul>
+            </div>
+            <div class="innerboxuc">
+                <h3>Rəsmi Mənbələr</h3>
+                <ul>
+                    <li><a href="#">Prezident.az</a></li>
+                    <li><a href="#">Müdafiə Nazirliyi</a></li>
+                    <li><a href="#">Dövlət Arxivi</a></li>
+                </ul>
+                <h3>Sosial Şəbəkələr</h3>
+                <div class="sosial media">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="innerboxdord">
+            <p>©️ 2026 Milli Qəhrəmanlar Portalı. Bütün hüquqlar qorunur.</p>
+            <div class="innerboxbes">
+                <span class="line-blue"></span>
+                <span class="line-red"></span>
+                <span class="line-green"></span>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
+
+body{
+    background-color: #0b131a; 
+}
+.container{
+    background-color: #071624;
+    color: #9cb1c9; 
+    padding-top: 60px;
+    padding-right: 100px;
+    padding-bottom: 30px;
+    padding-left: 100px;
+}
+.innerbox{
+    display: flex;
+    gap: 30px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #14283b;
+}
+.innerbox h3{
+    color: #ffffff;
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+.innerbox ul{
+    list-style: none;
+}
+.innerbox ul li{
+    margin-bottom: 12px;
+    font-size: 15px;
+}
+.innerbox ul a{
+    color: #9cb1c9;
+    text-decoration: none;
+}
+.innerbox il a{
+    color: #9cb1c9;
+    text-decoration: none;
+}
+.innerboxbir{
+    flex: 1.5; 
+    min-width: 250px;
+}
+.loqo{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+.loqobir{
+    background: linear-gradient(135deg, #ff4d4d, #33ccff);
+    color: #ffffff;
+    font-weight: 700;
+    padding: 10px 12px;
+    border-radius: 8px;
+    font-size: 18px;
+}
+.loqo p{
+    font-size: 12px;
+    color: #647b93;
+}
+.metn{
+    font-size: 14px;
+    line-height: 1.6;
+    max-width: 320px;
+}
+.innerboxiki{
+    flex: 1;
+    min-width: 180px;
+}
+.innerboxuc{
+    flex: 1;
+    min-width: 200px;
+}
+.melumat li i{
+    color: #00b4d8;
+    margin-right: 10px;
+    width: 16px;
+}
+.sosial.media{
+    display: flex;
+    gap: 10px;
+}
+.sosial.media a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    background-color: #122538;
+    color: #9cb1c9;
+    border-radius: 6px;
+    text-decoration: none;
+}
+.innerboxdord{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 25px;
+    font-size: 14px;
+    color: #536980;
+    gap: 15px;
+}
+.innerboxbes {
+    display: flex;
+    gap: 4px;
+}
+.innerboxbes span {
+    width: 45px;
+    height: 3px;
+    border-radius: 2px;
+}
+.line-blue{ background-color: #00b4d8; }
+.line-red{ background-color: #ff4d4d; }
+.line-green{ background-color: #2ec4b6; }
+
 
 Şəhrizad :
 <!DOCTYPE html>
