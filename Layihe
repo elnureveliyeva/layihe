@@ -58,7 +58,7 @@ a:link {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Milli Qəhrəmanlar - Portal</title>
+    <title>Ana Səhifə</title>
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     
@@ -1014,7 +1014,7 @@ Elnurə :
 <html lang="en">
 <head>
     <link rel="stylesheet" href="style.css">
-    <title>Milli Qəhrəmanlar</title>
+    <title>Arxiv</title>
 </head>
 <body>
     <header class="secme">
@@ -1206,7 +1206,7 @@ body{
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Media Arxivi</title>
+    <title>Media</title>
     <style>
         body {
             background-color: #0d1117;
@@ -1573,3 +1573,213 @@ body{
 
 
 Rinad :
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <title>Haqqımızda</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="ana-qutu">
+        
+        <div class="ust-hisse">
+            <div class="bayraq">
+                <span class="mavi"></span>
+                <span class="qirmizi"></span>
+                <span class="yasil"></span>
+            </div>
+            <h1>Haqqımızda</h1>
+            <p>Milli Qəhrəmanlarımızın xatirəsini əbədiləşdirmək məqsədi ilə yaradılmış rəsmi xatirə portalı</p>
+        </div>
+
+        <div class="meqsed-bloku">
+            <div class="metn">
+                <div class="basliq-ikon">
+                    <span class="ikon-goy"><i class="fa-solid fa-crosshairs"></i></span>
+                    <h2>Məqsədimiz</h2>
+                </div>
+                <p>Bu portal Azərbaycan Respublikasının ərazi bütövlüyü, müstəqilliyi və suverenliyi uğrunda igidliklə döyüşərək şəhid olmuş və ya müstəsna xidmətlər göstərmiş vətənpərvər oğul və qızlarının xatirəsini əbədiləşdirmək məqsədi ilə yaradılmışdır.</p>
+                <p>Hər bir qəhrəmanımızın həyat yolu, ailə məlumatları, qazandıqları orden və medallar, döyüşdükləri yerlər haqqında ətraflı məlumatlar toplanaraq gələcək nəsillər üçün qorunub saxlanılır.</p>
+            </div>
+            <div class="sekil-taraf">
+                <div class="kart-sekil">
+                    <div class="zoom-yeri">
+                        <img src="photo-1761170661370-ccddd01a7d46.jpg" alt="Şəkil">
+                    </div>
+                    <p class="sitat">"Qəhrəmanlarımız fiziki olaraq aramızda olmasa da, onların xatirəsi və göstərdikləri şücaət hər zaman xalqımızın qəlbində yaşayacaq."</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="deyerler">
+            <h2 class="deyer-basliq">Əsas Dəyərlərimiz</h2>
+            <div class="kartlar">
+                <div class="box">
+                    <span class="daire d-mavi"><i class="fa-regular fa-heart"></i></span>
+                    <h3>Ehtiram</h3>
+                    <p>Qəhrəmanlarımıza və onların ailələrinə dərin hörmət və ehtiram göstərmək</p>
+                </div>
+                <div class="box">
+                    <span class="daire d-qirmizi"><i class="fa-solid fa-shield-halved"></i></span>
+                    <h3>Xatirə</h3>
+                    <p>Qəhrəmanlarımızın xatirəsini gələcək nəsillər üçün qoruyub saxlamaq</p>
+                </div>
+                <div class="box">
+                    <span class="daire d-yasil"><i class="fa-solid fa-box-archive"></i></span>
+                    <h3>Arxiv</h3>
+                    <p>Dəqiq və etibarlı məlumatların toplanması və saxlanması</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
+
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0b1a29; /* Figmadakı tünd göy */
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.ana-qutu {
+    width: 85%;
+    max-width: 1100px;
+    margin: 50px auto;
+}
+
+
+.ust-hisse {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.bayraq {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.bayraq span {
+    width: 60px;
+    height: 4px;
+    margin: 0 4px;
+    border-radius: 2px;
+}
+
+.mavi { background: #00b4d8; }
+.qirmizi { background: #d90429; }
+.yasil { background: #009624; }
+
+.ust-hisse h1 { font-size: 38px; margin-bottom: 10px; }
+.ust-hisse p { color: #a0aec0; font-size: 14px; }
+
+
+.meqsed-bloku {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.metn { width: 50%; }
+.sekil-taraf { width: 42%; }
+
+.basliq-ikon {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.ikon-goy {
+    width: 35px;
+    height: 35px;
+    background: #0099cc;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 12px;
+}
+
+.metn p {
+    color: #cbd5e0;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+
+.kart-sekil {
+    background: #122538;
+    border: 1px solid #1a3652;
+    border-radius: 12px;
+    padding: 15px;
+}
+
+.zoom-yeri {
+    width: 100%;
+    height: 190px;
+    overflow: hidden; 
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+.zoom-yeri img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.4s; 
+}
+
+
+.kart-sekil:hover .zoom-yeri img {
+    transform: scale(1.1);
+}
+
+.sitat { font-size: 13px; color: #a0aec0; font-style: italic; }
+
+
+.deyer-basliq { text-align: center; margin-bottom: 30px; font-size: 24px; }
+.kartlar { display: flex; justify-content: space-between; }
+
+.box {
+    background: #122538;
+    border: 1px solid #1a3652;
+    width: 31%;
+    padding: 25px 15px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.daire {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 15px auto;
+}
+
+.d-mavi { background: #0099cc; }
+.d-qirmizi { background: #b3001b; }
+.d-yasil { background: #00a852; }
+
+.box h3 { font-size: 18px; margin-bottom: 8px; }
+.box p { font-size: 13px; color: #8a9cae; line-height: 1.5; }
+
+
+@media (max-width: 768px) {
+    .meqsed-bloku, .kartlar { flex-direction: column; }
+    .metn, .sekil-taraf, .box { width: 100%; margin-bottom: 20px; }
+}
