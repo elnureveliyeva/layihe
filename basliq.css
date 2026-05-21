@@ -1,0 +1,29 @@
+a:link {
+    color: white;
+}
+
+.container {
+    background-color: #0f1923;
+    height: 80px;
+    padding: 0 50px;
+    display: flex;
+    font-size: 35px;
+    gap: 50px;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+.loqo{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+.loqobir{
+    background: linear-gradient(135deg, #ff4d4d, #33ccff);
+    color: #ffffff;
+    font-weight: 700;
+    padding: 10px 12px;
+    border-radius: 8px;
+    font-size: 18px;
+}
