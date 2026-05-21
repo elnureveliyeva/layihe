@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+    <style>
+        body {
+            background-color: #0d1117;
+            color: #f0f4f8;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navbar */
+        nav {
+            height: 68px;
+            background-color: rgba(13, 17, 23, 0.95);
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+            display: flex;
+            align-items: center;
+            padding: 0 48px;
+            gap: 32px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-right: auto;
+        }
+
+        .logo-badge {
+            width: 44px;
+            height: 44px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, #e63946, #a01820);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        .logo-name { font-size: 14px; font-weight: bold; }
+        .logo-sub  { font-size: 11px; color: #8899aa; }
+
+        .nav-links a {
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 600;
+            color: #8899aa;
+            text-decoration: none;
+            transition: 0.2s;
+        }
+
+        .nav-links a:hover { color: #f0f4f8; }
+        .nav-links a.active { color: #00c8ff; }
+
+        /* Hero */
+        .hero {
+            text-align: center;
+            padding: 70px 24px 40px;
+        }
+
+        .stripes {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin-bottom: 24px;
+        }
+
+        .stripes div { height: 4px; border-radius: 2px; }
+        .s1 { width: 60px; background-color: #00c8ff; }
+        .s2 { width: 40px; background-color: #e63946; }
+        .s3 { width: 50px; background-color: #2ec4b6; }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            font-weight: bold;
+            margin-bottom: 14px;
+        }
+
+        .hero p {
+            color: #8899aa;
+            font-size: 15px;
+            max-width: 580px;
+            margin: 0 auto;
+            line-height: 1.7;
+        }
+
+        /* Filter duymeler */
+        .filters {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 36px 0;
+        }
+
+        .filter-btn {
+            padding: 12px 24px;
+            border-radius: 12px;
+            font-size: 14px;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+            background-color: #162032;
+            color: #8899aa;
+            transition: 0.2s;
+        }
+
+        .filter-btn:hover { color: #f0f4f8; background-color: #1e2d42; }
+        .filter-btn.active { background-color: #00c8ff; color: #0d1117; }
+
+        /* Kart grid */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 32px 80px;
+        }
+
+        .card {
+            background-color: #131b27;
+            border-radius: 18px;
+            overflow: hidden;
+            border: 1px solid rgba(255,255,255,0.07);
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(0,200,255,0.3);
+            box-shadow: 0 16px 40px rgba(0,0,0,0.4);
+        }
+
+        .card-img {
+            height: 200px;
+            background: linear-gradient(135deg, #1a2535, #0f1924);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card-img svg {
+            width: 50px;
+            height: 50px;
+            opacity: 0.2;
+            color: #f0f4f8;
+        }
+
+        .card-body { padding: 20px 22px 24px; }
+
+        .card-meta {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 10px;
+            font-size: 13px;
+        }
+
+        .year  { color: #00c8ff; font-weight: 700; }
+        .dot   { width: 4px; height: 4px; border-radius: 50%; background-color: #8899aa; }
+        .type  { color: #8899aa; }
+
+        .card-title {
+            font-size: 1rem;
+            font-weight: bold;
+            color: #00c8ff;
+            margin-bottom: 8px;
+            line-height: 1.4;
+        }
+
+        .card-desc {
+            font-size: 13px;
+            color: #8899aa;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .grid { grid-template-columns: 1fr 1fr; padding: 0 16px 60px; }
+            nav { padding: 0 20px; }
+        }
+
+        @media (max-width: 500px) {
+            .grid { grid-template-columns: 1fr; }
+            .hero h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+<nav>
+    <div class="logo">
+        <div class="logo-badge">MQ</div>
+        <div>
+            <div class="logo-name">Milli Qəhrəmanlar</div>
+            <div class="logo-sub">Azərbaycan Respublikası</div>
+        </div>
+    </div>
+    <div class="nav-links">
+        <a href="#">Ana Səhifə</a>
+        <a href="#">Arxiv</a>
+        <a href="#" class="active">Media</a>
+        <a href="#">Haqqımızda</a>
+    </div>
+</nav>
+
+<!-- Hero -->
+<div class="hero">
+    <div class="stripes">
+        <div class="s1"></div>
+        <div class="s2"></div>
+        <div class="s3"></div>
+    </div>
+    <h1>Media Arxivi</h1>
+    <p>Vətən müharibələri və qəhrəmanlarımızla bağlı videoçarxlar, sənədli filmlər və nadir fotolar</p>
+</div>
+
+<!-- Filterlər -->
+<div class="filters">
+    <button class="filter-btn active" onclick="filter('all', this)">Hamısı</button>
+    <button class="filter-btn" onclick="filter('video', this)">Videoçarxlar</button>
+    <button class="filter-btn" onclick="filter('film', this)">Sənədli Filmlər</button>
+    <button class="filter-btn" onclick="filter('photo', this)">Foto Qalereya</button>
+</div>
+
+<!-- Kartlar -->
+<div class="grid">
+
+    <div class="card" data-type="film">
+        <div class="card-img">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <rect x="2" y="2" width="20" height="20" rx="3"/>
+                <line x1="7" y1="2" x2="7" y2="22"/>
+                <line x1="17" y1="2" x2="17" y2="22"/>
+                <line x1="2" y1="12" x2="22" y2="12"/>
+            </svg>
+        </div>
+        <div class="card-body">
+            <div class="card-meta">
+                <span class="year">1992–1994</span>
+                <div class="dot"></div>
+                <span class="type">Sənədli Film</span>
+            </div>
+            <div class="card-title">Birinci Qarabağ Müharibəsi</div>
+            <p class="card-desc">1992–1994-cü illərdə baş vermiş döyüşlərin arxiv görüntüləri</p>
+        </div>
+    </div>
+
+    <div class="card" data-type="video">
+        <div class="card-img">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10"/>
+                <polygon points="10 8 16 12 10 16" fill="currentColor"/>
+            </svg>
+        </div>
+        <div class="card-body">
+            <div class="card-meta">
+                <span class="year">2016</span>
+                <div class="dot"></div>
+                <span class="type">Video</span>
+            </div>
+            <div class="card-title">Aprel Döyüşləri 2016</div>
+            <p class="card-desc">2016-cı il aprel döyüşlərinin videoçarxı</p>
+        </div>
+    </div>
+
+    <div class="card" data-type="photo">
+        <div class="card-img">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <rect x="3" y="3" width="18" height="18" rx="3"/>
+                <circle cx="8.5" cy="8.5" r="1.5"/>
+                <polyline points="21 15 16 10 5 21"/>
+            </svg>
+        </div>
+        <div class="card-body">
+            <div class="card-meta">
+                <span class="year">2020</span>
+                <div class="dot"></div>
+                <span class="type">Foto</span>
+            </div>
+            <div class="card-title">Zəfər Paradı</div>
+            <p class="card-desc">Bakı şəhərində keçirilmiş Zəfər Paradının foto arxivi</p>
+        </div>
+    </div>
+
+    <div class="card" data-type="video">
+        <div class="card-img">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10"/>
+                <polygon points="10 8 16 12 10 16" fill="currentColor"/>
+            </svg>
+        </div>
+        <div class="card-body">
+            <div class="card-meta">
+                <span class="year">2020</span>
+                <div class="dot"></div>
+                <span class="type">Video</span>
+            </div>
+            <div class="card-title">İkinci Qarabağ Müharibəsi</div>
+            <p class="card-desc">44 günlük müharibənin bütün döyüş görüntüləri</p>
+        </div>
+    </div>
+
+    <div class="card" data-type="film">
+        <div class="card-img">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <rect x="2" y="2" width="20" height="20" rx="3"/>
+                <line x1="7" y1="2" x2="7" y2="22"/>
+                <line x1="17" y1="2" x2="17" y2="22"/>
+                <line x1="2" y1="12" x2="22" y2="12"/>
+            </svg>
+        </div>
+        <div class="card-body">
+            <div class="card-meta">
+                <span class="year">2021</span>
+                <div class="dot"></div>
+                <span class="type">Sənədli Film</span>
+            </div>
+            <div class="card-title">Şuşanın Azad Edilməsi</div>
+            <p class="card-desc">Şuşanın azad edilməsinə həsr olunmuş sənədli film</p>
+        </div>
+    </div>
+
+    <div class="card" data-type="photo">
+        <div class="card-img">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <rect x="3" y="3" width="18" height="18" rx="3"/>
+                <circle cx="8.5" cy="8.5" r="1.5"/>
+                <polyline points="21 15 16 10 5 21"/>
+            </svg>
+        </div>
+        <div class="card-body">
+            <div class="card-meta">
+                <span class="year">2023</span>
+                <div class="dot"></div>
+                <span class="type">Foto</span>
+            </div>
+            <div class="card-title">Xatirə Mərasimləri</div>
+            <p class="card-desc">Şəhidlərə həsr olunmuş mərasimlərin foto arxivi</p>
+        </div>
+    </div>
+
+</div>
+
+<script>
+    function filter(type, btn) {
+        document.querySelectorAll('.filter-btn').forEach(function(b) {
+            b.classList.remove('active');
+        });
+        btn.classList.add('active');
+
+        document.querySelectorAll('.card').forEach(function(card) {
+            if (type === 'all' || card.dataset.type === type) {
+                card.style.display = '';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    }
+</script>
+
+</body>
+</html>
