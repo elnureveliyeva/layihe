@@ -1,0 +1,144 @@
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0b1a29; /* Figmadakı tünd göy */
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.ana-qutu {
+    width: 85%;
+    max-width: 1100px;
+    margin: 50px auto;
+}
+
+
+.ust-hisse {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.bayraq {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.bayraq span {
+    width: 60px;
+    height: 4px;
+    margin: 0 4px;
+    border-radius: 2px;
+}
+
+.mavi { background: #00b4d8; }
+.qirmizi { background: #d90429; }
+.yasil { background: #009624; }
+
+.ust-hisse h1 { font-size: 38px; margin-bottom: 10px; }
+.ust-hisse p { color: #a0aec0; font-size: 14px; }
+
+
+.meqsed-bloku {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.metn { width: 50%; }
+.sekil-taraf { width: 42%; }
+
+.basliq-ikon {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.ikon-goy {
+    width: 35px;
+    height: 35px;
+    background: #0099cc;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 12px;
+}
+
+.metn p {
+    color: #cbd5e0;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+
+.kart-sekil {
+    background: #122538;
+    border: 1px solid #1a3652;
+    border-radius: 12px;
+    padding: 15px;
+}
+
+.zoom-yeri {
+    width: 100%;
+    height: 190px;
+    overflow: hidden; 
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+.zoom-yeri img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.4s; 
+}
+
+
+.kart-sekil:hover .zoom-yeri img {
+    transform: scale(1.1);
+}
+
+.sitat { font-size: 13px; color: #a0aec0; font-style: italic; }
+
+
+.deyer-basliq { text-align: center; margin-bottom: 30px; font-size: 24px; }
+.kartlar { display: flex; justify-content: space-between; }
+
+.box {
+    background: #122538;
+    border: 1px solid #1a3652;
+    width: 31%;
+    padding: 25px 15px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.daire {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 15px auto;
+}
+
+.d-mavi { background: #0099cc; }
+.d-qirmizi { background: #b3001b; }
+.d-yasil { background: #00a852; }
+
+.box h3 { font-size: 18px; margin-bottom: 8px; }
+.box p { font-size: 13px; color: #8a9cae; line-height: 1.5; }
+
+
+@media (max-width: 768px) {
+    .meqsed-bloku, .kartlar { flex-direction: column; }
+    .metn, .sekil-taraf, .box { width: 100%; margin-bottom: 20px; }
+}
